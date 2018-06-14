@@ -1,0 +1,48 @@
+{
+  "correlationId": "1234",
+  "transactionStatus": "approved",
+  "validationStatus": "success",
+  "fdTransactionId": "1234",
+  "approvedAmount": {
+    "value": "1234",
+    "currencyCode": "USD"
+  },
+  "funding": {
+    "method": "creditCard",
+    "splitTenderId": "1874265",
+    "splitShipment": "01/02",
+    "creditCard": {
+      "number": "4111111111111111",
+      "cardholderName": "John Smith",
+      "alias": "1111",
+      "type": "American Express",
+      "expiryDate": {
+        "month": "09",
+        "year": "20"
+      },
+      "securityCode": "444",
+      "sequenceNumber": "01",
+      "token": {
+        "tokenId": "292bb6b886fc4446894f878b7e32bd5e",
+        "tokenProvider": "TRANS_ARMOR",
+        "expiryDate": {
+          "month": "09",
+          "year": "20"
+        }
+      },
+      "specialPayment": ""
+    },
+    "billingAddress": {
+      "type": "work",
+      "streetAddress": "100 Universal City Plaza",
+      "locality": "Hollywood",
+      "region": "CA",
+      "postalCode": "91608",
+      "country": "USA",
+      "formatted": "100 Universal City Plaza\nHollywood, CA 91608 USA",
+      "primary": true
+    }
+  },
+  "gatewayResponseCode": "00",
+  "gatewayMessage": "Transaction Normal"
+}

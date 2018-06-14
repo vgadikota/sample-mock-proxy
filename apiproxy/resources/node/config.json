@@ -1,0 +1,69 @@
+{
+    "mockDirectory": "./mock",
+    "quiet": false,
+    "port": "7880",
+    "latency": 50,
+    "logRequestHeaders": false,
+    "webServices": {
+    "": {
+      "mockFile": "sales.json",
+      "latency": 20,
+      "verbs": ["post"],
+      "responses": {
+        "post": {
+          "mockFile": "sales.json"
+        }
+      }
+    },
+    "*/refund": {
+      "mockFile": "refunds.json",
+      "latency": 20,
+      "verbs": ["post"],
+      "responses": {
+        "post": {
+          "mockFile": "refunds.json"
+        }
+      }
+    },
+    "status": {
+      "mockFile": "status.json",
+      "latency": 20,
+      "verbs": ["get"],
+      "responses": {
+        "post": {
+          "mockFile": "status.json"
+        }
+      }
+    },
+    "*/capture": {
+      "mockFile": "sales.json",
+      "latency": 20,
+      "verbs": ["post"],
+      "responses": {
+        "post": {
+          "mockFile": "sales.json"
+        }
+      }
+    },
+    "*": {
+      "mockFile": "sales.json",
+      "latency": 20,
+      "verbs": ["get"],
+      "responses": {
+        "post": {
+          "mockFile": "sales.json"
+        }
+      }
+    },
+    "*/void": {
+      "mockFile": "voids.json",
+      "latency": 20,
+      "verbs": ["post"],
+      "responses": {
+        "post": {
+          "mockFile": "voids.json"
+        }
+      }
+    }
+  }
+}
